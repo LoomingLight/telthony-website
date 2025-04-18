@@ -1,0 +1,172 @@
+/* mediaqueries.css */
+
+/* Media Query for screens smaller than 1400px */
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap; /* Improves wrapping on smaller screens */
+  }
+  #contact,
+  #projects {
+    height: fit-content; /* Ensures sections adjust naturally to content */
+  }
+}
+
+/* Media Query for screens smaller than 1200px */
+@media screen and (max-width: 1200px) {
+  /* Navigation Adjustments */
+  #desktop-nav {
+    display: none; /* Hide desktop navigation */
+  }
+  #hamburger-nav {
+    display: flex; /* Show hamburger menu */
+  }
+
+  /* Section Layout Adjustments */
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    display: block; /* Stack sections for smaller screens */
+  }
+  .arrow {
+    display: none; /* Hide arrows for compact UI */
+  }
+
+  /* Section Content Adjustments */
+  section,
+  .section-container {
+    height: fit-content; /* Adapt to content size */
+  }
+  section {
+    margin: 0 5%; /* Add consistent side margins */
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem; /* Center profile picture */
+  }
+  .about-containers {
+    margin-top: 0; /* Remove extra space */
+  }
+}
+
+/* Media Query for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+  /* Section and Footer Adjustments */
+  #contact,
+  footer {
+    height: 40vh; /* Reduce section height */
+  }
+  #profile {
+    height: 83vh;
+    margin-bottom: 0; /* Remove unnecessary margin */
+  }
+
+  /* Typography and Layout Adjustments */
+  article {
+    font-size: 1rem; /* Adjust font size for better readability */
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap; /* Allow elements to stack */
+  }
+
+  /* Contact and Navigation Adjustments */
+  .contact-info-container {
+    margin: 0; /* Avoid unnecessary spacing */
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem; /* Consistent text size */
+  }
+  .experience-sub-title {
+    font-size: 1.25rem; /* Adjust sub-title size */
+  }
+  .logo {
+    font-size: 1.5rem; /* Slightly larger for emphasis */
+  }
+  .nav-links {
+    flex-direction: column; /* Stack navigation links */
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  /* Image and Text Adjustments */
+  .section__pic-container {
+    width: auto;
+    height: 46vw; /* Maintain responsiveness */
+    justify-content: center;
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem; /* Improve heading size for mobile */
+  }
+  .text-container {
+    text-align: justify; /* Better alignment for text blocks */
+  }
+}
+
+/*Contact Form Adjustments*/
+
+.contact-form-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: inherit;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-form button.btn {
+  width: fit-content;
+  align-self: flex-start;
+  padding: 0.75rem 1.5rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button.btn:hover {
+  background-color: #555;
+}
