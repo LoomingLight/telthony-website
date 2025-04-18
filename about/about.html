@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="../portfolio.css" />
+    <link rel="stylesheet" href="../mediaqueries.css" />
+  </head>
+
+  <body>
+    <nav id="desktop-nav">
+        <a href="/portfolio.html" class="logo">Telthony</a> 
+      <div>
+        <ul class="nav-links">
+          <li><a href="/about/about.html">About</a></li>
+          <li><a href="/experience/experience.html">Experience</a></li>
+          <li><a href="/projects/projects.html">Projects</a></li>
+          <li><a href="/contact/contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Telthony</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="/about/about.html">About</a></li>
+          <li><a href="/experience/experience.html">Experience</a></li>
+          <li><a href="/projects/projects.html">Projects</a></li>
+          <li><a href="/contact/contact.html">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+<section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img
+          src="../assets/about-pic.jpg"
+          alt="Profile picture"
+          class="about-pic"
+        />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img
+              src="../assets/experience.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <h3>Experience</h3>
+            <p>4th year in Office Administration</p>
+            <p>2nd year in Frontend Development</p>
+            <p>1st year as a Data Analyst</p>
+          </div>
+          <div class="details-container">
+            <img
+              src="../assets/education.png"
+              alt="Education icon"
+              class="icon"
+            />
+            <h3>Education</h3>
+            <p>Undergraduate of B.Sc. B.A</p>
+            <p>AWS Re/Start Scholar</p>
+            <p>Filipino Googler Network</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p style="text-align: justify;">
+            With a solid foundation in front-end development, I specialize in crafting responsive and visually appealing websites that enhance user experience. My education and hands-on experience have equipped me with the skills to bring innovative ideas to life, whether you're looking to build a new website from scratch or optimize an existing one. Whether you're an individual, small business, or large organization, I can help you establish a strong online presence with a website that not only looks great but also functions flawlessly. Let's work together to turn your vision into a reality.
+            </p>
+            
+        </div>
+      </div>
+    </div>
+    <img
+      src="../assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#experience'"
+    />
+  </section>
+
+  <footer>
+    <p>Copyright &#169; 2025 Telthony. All Rights Reserved.</p>
+  </footer>
+
+</html>
