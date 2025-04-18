@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Telthony</title>
+  <link rel="stylesheet" href="../portfolio.css" />
+  <link rel="stylesheet" href="../mediaqueries.css" />
+</head>
+
+<body>
+  <!-- Desktop Navigation -->
+  <nav id="desktop-nav">
+    <a href="/portfolio.html" class="logo">Telthony</a>
+    <div>
+      <ul class="nav-links">
+        <li><a href="/about/about.html">About</a></li>
+        <li><a href="/experience/experience.html">Experience</a></li>
+        <li><a href="/projects/projects.html">Projects</a></li>
+        <li><a href="/contact/contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Mobile Navigation -->
+  <nav id="hamburger-nav">
+    <div class="logo">Telthony</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="/about/about.html" onclick="toggleMenu()">About</a></li>
+        <li><a href="/experience/experience.html" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="/projects/projects.html" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="/contact/contact.html" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="../assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:contacts@telthony.com">contacts@telthony.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="../assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/telthony" target="_blank">LinkedIn</a></p>
+      </div>
+    </div>
+
+    <!-- Redesigned Contact Form -->
+    <div class="contact-form-container">
+      <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="_replyto" placeholder="your@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Your message here..." required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Scroll to Top Button -->
+  <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">&#8679;</button>
+
+  <!-- Footer -->
+  <footer>
+    <p>Copyright &#169; 2025 Telthony. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../script.js"></script>
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector(".menu-links");
+      const icon = document.querySelector(".hamburger-icon");
+      menu.classList.toggle("open");
+      icon.classList.toggle("open");
+    }
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    window.onscroll = function () {
+      const btn = document.getElementById("scrollToTopBtn");
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+  </script>
+</body>
+</html>
